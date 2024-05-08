@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# prints "To infinity and beyond" indefinetly, with 2-second pauses
+while ((1)); do
+	echo "To infinity and beyond"
+	sleep 2
+	trap "echo \"I am invincible!!!\"" SIGTERM
+done
